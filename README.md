@@ -30,14 +30,11 @@ Creates a counter used to uniquely number each screenshot.
 
 Step 2: Read URLs
 
-for i in $(cat /home/Local_address/Filename)
+for i in $(cat /home/Local_address/Url_List)
 
-Reads each URL from the Filename:
+Reads each URL from the Url_List
 
-/home/Local_address/Filename
-
-
-Each line should contain a single URL.
+Each line in the Url_List text file should contain a single URL.
 
 Step 3: Increment Counter
 
@@ -70,14 +67,19 @@ Counter
 Example:
 
 Filename_06271530_1.bmp
+
 Filename_06271530_2.bmp
+
 Filename_06271530_3.bmp
 
 where:
 
 06 → Month
+
 27 → Day
+
 15 → Hour
+
 30 → Minute
 
 
