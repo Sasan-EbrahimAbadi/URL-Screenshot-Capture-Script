@@ -1,0 +1,7 @@
+#!/bin/bash
+x=0;
+for i in $(cat /home/Local_address/URL_List)
+  do
+    x=$((x+1));
+    cutycapt --url="$i" --out=/home/Local_address/Filename_$(date +%m%d%H%M)_$x.bmp
+  done
